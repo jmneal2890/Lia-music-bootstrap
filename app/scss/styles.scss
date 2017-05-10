@@ -1,0 +1,143 @@
+@import "bootstrap_scss/bootstrap.scss";
+
+//Global Styles
+$lia-main: #238BA1;
+$lia-light: #A9E1ED;
+$tbm-main: #AC6E51;
+$tbm-light: #EDC7B5;
+$bfts-main: #242B3B;
+$bfts-light: #8F96A5;
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin:0 auto;
+}
+
+
+//header Styles
+.header {
+  text-align: center;
+  background-image: url(/images/test_01.jpg);
+  height: 100vh;
+  background-size: cover;
+  color: white;
+
+  h1 {
+    padding-top: 45vh;
+    font-family: "viktor-script";
+    font-size: 5em;
+    text-shadow: 2px 2px 8px #000000;
+  }
+}
+
+
+//Nav Styles
+.nav {
+  .logo {
+    font-family: "viktor-script";
+    font-size: 1.5em;
+    color: white;
+    padding-top: 1rem;
+  }
+  .nav_elements {
+  }
+}
+
+.nav_parent {
+  background-color: $lia-main;
+  transition: background-color 0.5s ease;
+}
+
+
+//Project pannel styles
+.projects {
+  margin: 2rem auto 2rem auto;
+  .tbm {
+    font-family: "verveine";
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  .lr {
+    font-family: "viktor-script";
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  .bfts {
+    font-family: "orator-std",monospace;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+
+.item {
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  margin: 1rem auto;
+}
+
+
+//bio styles
+.biopic{
+  padding-bottom: 1rem;
+}
+
+
+//Music Styles
+.lr_playlist {
+  background-color: $lia-main;
+  color: white;
+  font-family: "viktor-script";
+  font-size: 1.5em;
+  padding: 1rem;
+  line-height: 1.3em;
+}
+
+.bfts_playlist {
+  background-color: $bfts-main;
+  color: white;
+  font-family: "orator-std";
+  padding: 1rem;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+.tbm_playlist {
+  background-color: $tbm-main;
+  color: white;
+  font-family: "verveine";
+  padding: 1rem;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
+#lr_playlist {
+  background-color: $lia-main;
+  .card {
+    background-color: $lia-main;
+  }
+  .lr_spot {
+    width: 100px;
+  }
+}
+
+#bfts_playlist {
+  background-color: $bfts-main;
+  .card {
+    background-color: $bfts-main;
+  }
+  .bfts_spot {
+    width: 100px;
+  }
+}
+
+#tbm_playlist {
+  background-color: $tbm-main;
+  .card {
+    background-color: $tbm-main;
+  }
+  .tbm_spot {
+    width: 100px;
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap test</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="https://use.typekit.net/kzd0xob.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+</head>
+<body>
+
+<!--Header-->
+<div class="container-fluid header">
+  <h1 class="lr">Lia Rose</h1>
+</div>
+
+<!--Nav-->
+  <div class="navbar sticky-top navbar-toggleable-sm navbar-inverse nav_parent">
+    <div class="container row justify-content-md-between wrapper nav">
+      <div class="logo">
+        <p class="lr">Lia Rose</p>
+      </div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse nav_elements">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!--Projects-->
+<div class="container-fluid wrapper projects">
+  <div class="row justify-content-md-between">
+    <div class="col-md band">
+      <div class="card item scroll" data-toggle="tab" data-alt="lr" href="#music #lr_playlist">
+        <div class="card-block">
+          <h3 class="card-title text-center lr">Lia Rose</h3>
+          <img class="card-img-bottom img-fluid" src="/images/lr_image.jpg" alt="#">
+        </div>
+      </div>
+    </div>
+    <div class="col-md band">
+      <div class="card item scroll" data-toggle="tab" data-alt="bfts" href="#music #bfts_playlist">
+        <div class="card-block">
+          <h3 class="card-title text-center bfts">Built For The Sea</h3>
+          <img class="card-img-bottom img-fluid" src="/images/bfts_image.jpg" alt="#">
+        </div>
+      </div>
+    </div>
+    <div class="col-md band">
+      <div class="card item scroll" data-toggle="tab" data-alt="tbm" href="#music #tbm_playlist">
+        <div class="card-block">
+          <h3 class="card-title text-center tbm">The Brushfoot Migration</h3>
+          <img class="card-img-bottom img-fluid" src="/images/tbm_image.jpg" alt="#">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Bio-->
+<div class="jumbotron bio">
+    <div class="container wrapper">
+    <img class="biopic" src="https://farm1.staticflickr.com/752/33176010845_1eeb4beb2d_h.jpg" alt="#" height="220px" width="200px">
+    <h3>Who Am I...</h3>
+    <p>Vivamus commodo, tortor eget efficitur rhoncus, metus elit efficitur felis, vel auctor erat nunc in ex. Donec sit amet libero a est cursus bibendum accumsan quis quam. Nullam blandit dui at magna bibendum vehicula. Sed nec orci neque. Pellentesque suscipit eget leo eget fermentum. Nulla facilisi. Suspendisse sit amet massa vestibulum, condimentum est nec, consequat ipsum. Sed gravida congue eros id condimentum. Mauris vitae justo sed tortor rutrum tristique. Aenean eleifend est eget arcu egestas venenatis. Aenean luctus quam tincidunt nisl egestas, id cursus nulla cursus. In et iaculis enim, eu pulvinar tortor. Cras eget lacus gravida, sodales quam vulputate, bibendum nisi. Mauris ac elementum erat. </br></br>Morbi pretium risus lacus, vitae tincidunt lorem interdum et. Donec vel pellentesque augue. Quisque blandit sapien ut porta commodo. Donec porta maximus neque, nec mollis ipsum porta nec. Donec ullamcorper nibh nec aliquam tempus. Aliquam bibendum mauris vitae nulla tempor, a sodales purus sollicitudin. Sed pulvinar eget augue eget ullamcorper. Aliquam quis magna eget justo sagittis rhoncus.</p>
+  </div>
+</div>
+
+<!--Music-->
+<div id="music" class="container-fluid wrapper music">
+  <div class="row jusify-content-md-between">
+
+    <!--stotify nav controller-->
+    <div class="col-md-6">
+
+    <div class="nav-header">
+      <nav class="nav nav-tabs justify-content-center flex-row">
+        <a id="band_select" class="lr_playlist band_select" href="#lr_playlist" class="nav-link active" data-toggle="tab" data-alt="lr">Lia Rose</a>
+        <a id="band_select" class="bfts_playlist band_select" href="#bfts_playlist" class="nav-link" data-toggle="tab" data-alt="bfts">Built For The Sea</a>
+        <a id="band_select" class="tbm_playlist band_select" href="#tbm_playlist" class="nav-link" data-toggle="tab" data-alt="tbm">The Brushfoot Migration</a>
+      </nav>
+      </div>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="lr_playlist">
+          <div class="card">
+            <div class="card-block">
+              <iframe class="lr_spot card-img-bottom" src="https://embed.spotify.com/?uri=spotify%3Aartist%3A5c1Ag67oqsK5rOUtOmK9J0" height="535" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="bfts_playlist">
+          <div class="card">
+            <div class="card-block">
+              <iframe class="bfts_spot card-img-bottom" src="https://embed.spotify.com/?uri=spotify%3Aartist%3A0XQlsjYCX4a81az5p9zwuY" height="535" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="tbm_playlist">
+          <div class="card">
+            <div class="card-block">
+              <iframe class="tbm_spot card-img-bottom" src="https://embed.spotify.com/?uri=spotify%3Auser%3A129626194%3Aplaylist%3A2BpEayGdQnxkzAEp44IFqO" height="535" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--relevant link controller-->
+    <div class="col-md">
+        <div class="card">
+          <div class="card-block text-center">
+            <h3>Spotify</h3>
+            <h3>Patreon</h3>
+            <h3>Youtube</h3>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<!--videos section-->
+
+<div class="jumbotron wrapper row col-md">
+  <div id="video_controls" class="carousel slide">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <iframe id="youtube" class="d-block img-fluid" src="https://player.vimeo.com/video/104771837?title=0&byline=0&portrait=0&api=1" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
+      </div>
+      <div class="carousel-item">
+        <iframe id="youtube" class="d-block img-fluid" src="https://www.youtube.com/embed/naeRiI7VGhw" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
+      </div>
+      <div class="carousel-item">
+        <iframe id="youtube" class="d-block img-fluid" src="https://www.youtube.com/embed/naeRiI7VGhw" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#video_controls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video_controls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!--
+<script type="text/javascript" src="js/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="js/tether/dist/js/tether.js"></script>
+<script type="text/javascript" src="js/bootstrap/dist/js/bootstrap.js"></script>
+-->
+<script type="text/javascript" src="js/dist/build.js"></script>
+
+</body>
+</html>
