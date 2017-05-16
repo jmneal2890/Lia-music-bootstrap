@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap test</title>
+  <title>Lia Rose Music</title>
 
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/assets/owl.carousel.css">
+  <link rel="stylesheet" href="./css/assets/owl.theme.default.css">
 
   <script src="https://use.typekit.net/kzd0xob.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -16,40 +18,47 @@
 
 <!--Header-->
 <div class="container-fluid header">
-  <h1 class="lr">Lia Rose</h1>
+  <h1 class="lr scrollDown" href="#projects">Lia Rose</h1>
+  <img class="scrollDown" src="/images/enter_arrow.png" alt="arrows" href="#projects">
 </div>
 
 <!--Nav-->
-  <div class="navbar sticky-top navbar-toggleable-sm navbar-inverse nav_parent">
-    <div class="container row justify-content-md-between wrapper nav">
-      <div class="logo">
+  <div class="navbar sticky-top navbar-toggleable-sm navbar-inverse navbar-light nav_parent">
+    <div class="container wrapper nav">
+      <div class="logo navbar-brand">
         <p class="lr">Lia Rose</p>
       </div>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <nav id="mainNav" class="collapse navbar-collapse nav_elements">
-        <ul class="navbar-nav justify-content-end">
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link scrollDown" href="#projects">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link scrollDown" href="#about_me">About Me</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Music
+            </a>
+            <div class="dropdown-menu nav_dropdown" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item scrollDown" data-alt="lr" href="#music">Lia Rose</a>
+              <a class="dropdown-item scrollDown" data-alt="bfts" href="#music">Built For The Sea</a>
+              <a class="dropdown-item scrollDown" data-alt="tbm" href="#music">The Brushfoot Migration</a>
+            </div>
           </li>
         </ul>
       </nav>
     </div>
   </div>
-</div>
 
 <!--Projects-->
-<div class="container-fluid wrapper projects">
+<div id="projects" class="container-fluid wrapper projects">
   <div class="row justify-content-md-between">
     <div class="col-md band">
-      <div class="card item scroll" data-toggle="tab" data-alt="lr" href="#music #lr_playlist">
+      <div class="card item scrollDown" data-toggle="tab" data-alt="lr" href="#music">
         <div class="card-block">
           <h3 class="card-title text-center lr">Lia Rose</h3>
           <img class="card-img-bottom img-fluid" src="/images/lr_image.jpg" alt="#">
@@ -57,7 +66,7 @@
       </div>
     </div>
     <div class="col-md band">
-      <div class="card item scroll" data-toggle="tab" data-alt="bfts" href="#music #bfts_playlist">
+      <div class="card item scrollDown" data-toggle="tab" data-alt="bfts" href="#music">
         <div class="card-block">
           <h3 class="card-title text-center bfts">Built For The Sea</h3>
           <img class="card-img-bottom img-fluid" src="/images/bfts_image.jpg" alt="#">
@@ -65,7 +74,7 @@
       </div>
     </div>
     <div class="col-md band">
-      <div class="card item scroll" data-toggle="tab" data-alt="tbm" href="#music #tbm_playlist">
+      <div class="card item scrollDown" data-toggle="tab" data-alt="tbm" href="#music">
         <div class="card-block">
           <h3 class="card-title text-center tbm">The Brushfoot Migration</h3>
           <img class="card-img-bottom img-fluid" src="/images/tbm_image.jpg" alt="#">
@@ -76,20 +85,22 @@
 </div>
 
 <!--Bio-->
-<div class="jumbotron bio">
+<div id="about_me" class="jumbotron bio">
     <div class="container wrapper">
     <img class="biopic" src="https://farm1.staticflickr.com/752/33176010845_1eeb4beb2d_h.jpg" alt="#" height="220px" width="200px">
     <h3>Who Am I...</h3>
-    <p>Vivamus commodo, tortor eget efficitur rhoncus, metus elit efficitur felis, vel auctor erat nunc in ex. Donec sit amet libero a est cursus bibendum accumsan quis quam. Nullam blandit dui at magna bibendum vehicula. Sed nec orci neque. Pellentesque suscipit eget leo eget fermentum. Nulla facilisi. Suspendisse sit amet massa vestibulum, condimentum est nec, consequat ipsum. Sed gravida congue eros id condimentum. Mauris vitae justo sed tortor rutrum tristique. Aenean eleifend est eget arcu egestas venenatis. Aenean luctus quam tincidunt nisl egestas, id cursus nulla cursus. In et iaculis enim, eu pulvinar tortor. Cras eget lacus gravida, sodales quam vulputate, bibendum nisi. Mauris ac elementum erat. </br></br>Morbi pretium risus lacus, vitae tincidunt lorem interdum et. Donec vel pellentesque augue. Quisque blandit sapien ut porta commodo. Donec porta maximus neque, nec mollis ipsum porta nec. Donec ullamcorper nibh nec aliquam tempus. Aliquam bibendum mauris vitae nulla tempor, a sodales purus sollicitudin. Sed pulvinar eget augue eget ullamcorper. Aliquam quis magna eget justo sagittis rhoncus.</p>
+    <p>San Francisco's Lia Rose writes songs that are poetic, intensely honest, and at times unmistakably autobiographical. Her voice has been called “captivating and beautiful” by Tape Op Magazine.
+    </br></br>Driven by a fierce optimism and a hope that this world can be a better place for everyone, Rose creates music and tours with projects focused on making a positive impact.
+    </br></br>In 2015 Lia Rose relaunched Built for the Sea, signing with Tom Morello's new label: Firebrand Records whose tag line is "We know that music alone does not change the world, but we recognize that it is an integral part of the movements that do." Built for the Sea released a new EP in 2015 on Firebrand Records and they have been playing shows again for the first time since 2009.​</p>
   </div>
 </div>
 
 <!--Music-->
 <div id="music" class="container-fluid wrapper music">
-  <div class="row jusify-content-md-between">
+  <div class="row justify-content-between">
 
-    <!--stotify nav controller-->
-    <div class="col-md-6">
+    <!--spotify nav controller-->
+    <div class="col-md-5 music_item playlist_select">
 
     <div class="nav-header">
       <nav class="nav nav-tabs justify-content-center flex-row">
@@ -119,7 +130,10 @@
         <div class="tab-pane" id="tbm_playlist">
           <div class="card">
             <div class="card-block">
+              <!--
               <iframe class="tbm_spot card-img-bottom" src="https://embed.spotify.com/?uri=spotify%3Auser%3A129626194%3Aplaylist%3A2BpEayGdQnxkzAEp44IFqO" height="535" frameborder="0" allowtransparency="true"></iframe>
+            -->
+              <h3>Coming Soon</h3>
             </div>
           </div>
         </div>
@@ -128,12 +142,24 @@
     </div>
 
     <!--relevant link controller-->
-    <div class="col-md">
+    <div class="col-md-5 music_item related_links">
         <div class="card">
-          <div class="card-block text-center">
-            <h3>Spotify</h3>
-            <h3>Patreon</h3>
-            <h3>Youtube</h3>
+          <div class="text-center">
+            <h1>Check us out on:</h1>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">
+                <img src="/images/fb_icon.svg" alt="facebook icon" height="50" width="50">
+                <a class="facebook_link" target="_blank" href="https://www.facebook.com/LiaRoseOfficial/"><h4>Facebook</h4></a>
+                </li>
+              <li class="list-group-item">
+                <img src="/images/yt_icon.svg" alt="youtube icon" height="50" width="50">
+                <a class="youtube_link" target="_blank" href="https://www.youtube.com/user/liarosewastaken/videos"><h4>YouTube</h4></a>
+                </li>
+              <li class="list-group-item">
+                <img src="/images/pt_icon.svg" alt="patreon icon" height="50" width="50">
+                <a target="_blank" href="https://www.patreon.com/liarose"><h4>Patreon</h4></a>
+                </li>
+            </ul>
           </div>
         </div>
     </div>
@@ -142,37 +168,44 @@
 </div>
 
 <!--videos section-->
-
-<div class="jumbotron wrapper row col-md">
-  <div id="video_controls" class="carousel slide">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <iframe id="youtube" class="d-block img-fluid" src="https://player.vimeo.com/video/104771837?title=0&byline=0&portrait=0&api=1" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
+<div id="videos" class="jumbotron">
+  <div class="row vid_view">
+    <div class="owl-carousel owl-theme">
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/104771837"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/199039675"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/199046490"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/142323610"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/187124855"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/176416426"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/199042613"></a>
+            </div>
+            <div class="item-video" data-merge="3">
+              <a class="owl-video" href="https://vimeo.com/204831593"></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <iframe id="youtube" class="d-block img-fluid" src="https://www.youtube.com/embed/naeRiI7VGhw" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
-      </div>
-      <div class="carousel-item">
-        <iframe id="youtube" class="d-block img-fluid" src="https://www.youtube.com/embed/naeRiI7VGhw" width="920" height="517" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfulscreen></iframe>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#video_controls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#video_controls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
 
 
-<!--
+
 <script type="text/javascript" src="js/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="js/tether/dist/js/tether.js"></script>
-<script type="text/javascript" src="js/bootstrap/dist/js/bootstrap.js"></script>
--->
+<script type="text/javascript" src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+
 <script type="text/javascript" src="js/dist/build.js"></script>
 
 </body>

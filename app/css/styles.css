@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(../css/assets/owl.carousel.css);
+@import url(../css/assets/owl.theme.default.css);
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -2125,7 +2127,7 @@ tbody.collapse.show {
   padding: 3px 1.5rem;
   clear: both;
   font-weight: normal;
-  color: #292b2c;
+  color: #eceeef;
   text-align: inherit;
   white-space: nowrap;
   background: none;
@@ -6003,16 +6005,23 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-family: "viktor-script";
     font-size: 5em;
     text-shadow: 2px 2px 8px #000000; }
-
-.nav .logo {
-  font-family: "viktor-script";
-  font-size: 1.5em;
-  color: white;
-  padding-top: 1rem; }
+  .header img {
+    margin-top: 40vh; }
 
 .nav_parent {
   background-color: #238BA1;
   transition: background-color 0.5s ease; }
+  .nav_parent .nav {
+    margin: -.8rem auto -1.3rem auto; }
+    .nav_parent .nav .logo {
+      font-family: "viktor-script";
+      font-size: 1.5em;
+      color: white;
+      padding-top: 1rem; }
+    .nav_parent .nav .nav_dropdown {
+      background-color: #238BA1; }
+  .nav_parent button {
+    margin-top: .8rem; }
 
 .projects {
   margin: 2rem auto 2rem auto; }
@@ -6035,8 +6044,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
   margin: 1rem auto; }
 
+.bio {
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25); }
+
 .biopic {
   padding-bottom: 1rem; }
+
+.music_item {
+  margin: 2rem 0; }
 
 .lr_playlist {
   background-color: #238BA1;
@@ -6082,3 +6099,34 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     background-color: #AC6E51; }
   #tbm_playlist .tbm_spot {
     width: 100px; }
+  #tbm_playlist h3 {
+    color: white;
+    margin-bottom: 31.9rem;
+    text-align: center; }
+
+.related_links .card {
+  background-color: #238BA1;
+  transition: background-color 0.5s ease;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25); }
+  .related_links .card h1 {
+    color: white;
+    margin: 1rem auto;
+    font-family: "viktor-script"; }
+  .related_links .card img {
+    margin-right: 1rem; }
+  .related_links .card h4 {
+    margin-top: .5rem; }
+
+#videos {
+  margin: 2rem 0 0 0;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25); }
+  #videos .vid_view {
+    margin: 0 auto; }
+
+@media only screen and (max-width: 420px) {
+  .header img {
+    margin-top: 28vh; } }

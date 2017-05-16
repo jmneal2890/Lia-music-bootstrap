@@ -1,4 +1,6 @@
 @import "bootstrap_scss/bootstrap.scss";
+@import "../css/assets/owl.carousel.css";
+@import "../css/assets/owl.theme.default.css";
 
 //Global Styles
 $lia-main: #238BA1;
@@ -29,24 +31,33 @@ $bfts-light: #8F96A5;
     font-size: 5em;
     text-shadow: 2px 2px 8px #000000;
   }
+
+  img {
+    margin-top: 40vh;
+  }
 }
 
 
+
 //Nav Styles
+.nav_parent{
+  background-color: $lia-main;
+  transition: background-color 0.5s ease;
 .nav {
+  margin: -.8rem auto -1.3rem auto;
   .logo {
     font-family: "viktor-script";
     font-size: 1.5em;
     color: white;
     padding-top: 1rem;
   }
-  .nav_elements {
+  .nav_dropdown {
+    background-color: $lia-main;
   }
 }
-
-.nav_parent {
-  background-color: $lia-main;
-  transition: background-color 0.5s ease;
+  button {
+    margin-top: .8rem;
+  }
 }
 
 
@@ -79,12 +90,24 @@ $bfts-light: #8F96A5;
 
 
 //bio styles
+.bio {
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+}
+
 .biopic{
   padding-bottom: 1rem;
 }
 
 
 //Music Styles
+
+.music_item {
+  margin: 2rem 0;
+}
+
+
 .lr_playlist {
   background-color: $lia-main;
   color: white;
@@ -139,5 +162,56 @@ $bfts-light: #8F96A5;
   }
   .tbm_spot {
     width: 100px;
+  }
+  h3{
+    color: white;
+    margin-bottom: 31.9rem;
+    text-align: center;
+  }
+}
+
+
+//Related Links styles
+.related_links {
+  .card{
+    background-color: $lia-main;
+    transition: background-color 0.5s ease;
+    -webkit-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
+    -moz-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
+    box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
+    h1 {
+      color: white;
+      margin: 1rem auto;
+      font-family: "viktor-script";
+    }
+    img {
+      margin-right: 1rem;
+    }
+    h4 {
+      margin-top: .5rem;
+    }
+  }
+}
+
+
+//Video section styles
+#videos {
+  margin: 2rem 0 0 0;
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+  box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
+
+  .vid_view {
+    margin: 0 auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  .header {
+    img {
+      margin-top: 28vh;
+    }
   }
 }
