@@ -6007,7 +6007,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-size: 5em;
     text-shadow: 2px 2px 8px #000000; }
   .header img {
-    margin-top: 40vh; }
+    margin-top: 38vh; }
 
 .nav_parent {
   background-color: #238BA1;
@@ -6062,9 +6062,23 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   -webkit-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
   -moz-box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25);
   box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25); }
+  .bio h3 {
+    padding: 1rem 0 1.5rem 0; }
 
 .biopic {
   padding-bottom: 1rem; }
+
+.bio_lr {
+  display: block;
+  transition: display 0.5s ease; }
+
+.bio_bfts {
+  display: none;
+  transition: display 0.5s ease; }
+
+.bio_tbm {
+  display: none;
+  transition: display 0.5s ease; }
 
 .music_item {
   margin: 2rem 0; }
@@ -6115,7 +6129,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     width: 100px; }
   #tbm_playlist h3 {
     color: white;
-    margin-bottom: 31.9rem;
+    margin-top: 3rem;
+    margin-bottom: 27.9rem;
     text-align: center; }
 
 .related_links .card {
@@ -6140,6 +6155,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   box-shadow: 0px 0px 57px 0px rgba(4, 6, 9, 0.25); }
   #videos .vid_view {
     margin: 0 auto; }
+
+.footer {
+  margin: 1rem auto 0 auto;
+  color: #e9e9e9; }
 
 @media only screen and (max-width: 420px) {
   .header img {

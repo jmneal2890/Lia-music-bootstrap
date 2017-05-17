@@ -70,6 +70,7 @@ function musicSelect() {
       themeChange('bfts', '#8F96A5', '#242B3B');
       $('.facebook_link').attr('href', 'https://www.facebook.com/builtforthesea/');
       $('.youtube_link').attr('href', 'https://www.youtube.com/channel/UC0EY8MEuhHLzaV6Vd9U7dZg/videos');
+      $('.bandcamp_link').attr('href', 'https://builtforthesea.bandcamp.com/');
       $('.related_links').find('h1').css('font-family', "orator-std");
       $('.logo_lr').css('display', 'none');
       $('.logo_bfts').css('display', 'block');
@@ -77,10 +78,14 @@ function musicSelect() {
       $('.header_logo').css('font-family', 'orator-std');
       $('.header_logo').fadeOut().html('Built For The Sea').fadeIn();
       $('.header').css('background-image', 'url(/images/header_bfts_01.jpg)');
+      $('.bio_lr').css('display', 'none');
+      $('.bio_bfts').css('display', 'block');
+      $('.bio_tbm').css('display', 'none');
     } else if (project == 'lr') {
       themeChange('lr', '#A9E1ED', '#238BA1');
       $('.facebook_link').attr('href', 'https://www.facebook.com/LiaRoseOfficial/');
       $('.youtube_link').attr('href', 'https://www.youtube.com/user/liarosewastaken/videos');
+      $('.bandcamp_link').attr('href', 'https://liarose.bandcamp.com/');
       $('.related_links').find('h1').css('font-family', "viktor-script");
       $('.logo_lr').css('display', 'block');
       $('.logo_bfts').css('display', 'none');
@@ -88,17 +93,24 @@ function musicSelect() {
       $('.header_logo').css('font-family', 'viktor-script');
       $('.header_logo').fadeOut().html('Lia Rose').fadeIn();
       $('.header').css('background-image', 'url(/images/header_01.jpg)');
+      $('.bio_lr').css('display', 'block');
+      $('.bio_bfts').css('display', 'none');
+      $('.bio_tbm').css('display', 'none');
     } else if (project == 'tbm') {
       themeChange('tbm', '#EDC7B5', '#AC6E51');
       $('.facebook_link').attr('href', 'https://www.facebook.com/thebrushfootmigration/');
       $('.youtube_link').attr('href', 'https://www.youtube.com/channel/UCXO0UxITbdHVl0yFfzi2sxQ');
+      $('.bandcamp_link').attr('href', 'https://liarose.bandcamp.com/');
       $('.related_links').find('h1').css('font-family', "verveine");
       $('.logo_lr').css('display', 'none');
       $('.logo_bfts').css('display', 'none');
       $('.logo_tbm').css('display', 'block');
       $('.header_logo').css('font-family', 'verveine');
-      $('.header_logo').fadeOut().html('The Brushfoot Migration').fadeIn()
+      $('.header_logo').fadeOut().html('The Brushfoot Migration').fadeIn();
       $('.header').css('background-image', 'url(/images/header_tbm_01.jpg)');
+      $('.bio_lr').css('display', 'none');
+      $('.bio_bfts').css('display', 'none');
+      $('.bio_tbm').css('display', 'block');
     }
   } else {
     console.log(project);
