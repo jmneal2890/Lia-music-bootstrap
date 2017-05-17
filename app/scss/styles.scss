@@ -20,17 +20,19 @@ $bfts-light: #8F96A5;
 //header Styles
 .header {
   text-align: center;
-  background-image: url(/images/test_01.jpg);
+  background-image: url(/images/header_01.jpg);
+  transition: background-image 0.5s ease;
   height: 100vh;
   background-size: cover;
   color: white;
 
-  h1 {
+  .header_logo {
     padding-top: 45vh;
     font-family: "viktor-script";
     font-size: 5em;
     text-shadow: 2px 2px 8px #000000;
   }
+
 
   img {
     margin-top: 40vh;
@@ -45,8 +47,23 @@ $bfts-light: #8F96A5;
   transition: background-color 0.5s ease;
 .nav {
   margin: -.8rem auto -1.3rem auto;
-  .logo {
+  .logo_lr {
     font-family: "viktor-script";
+    display: block;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 1rem;
+  }
+  .logo_bfts {
+    font-family: "orator-std";
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    padding-top: 1rem;
+  }
+  .logo_tbm {
+    font-family: "verveine";
+    display: none;
     font-size: 1.5em;
     color: white;
     padding-top: 1rem;
@@ -175,7 +192,7 @@ $bfts-light: #8F96A5;
 .related_links {
   .card{
     background-color: $lia-main;
-    transition: background-color 0.5s ease;
+
     -webkit-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
     -moz-box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
     box-shadow: 0px 0px 40px 0px rgba(4, 6, 9, 0.25);
@@ -183,6 +200,7 @@ $bfts-light: #8F96A5;
       color: white;
       margin: 1rem auto;
       font-family: "viktor-script";
+      transition: font-family 0.5s ease;
     }
     img {
       margin-right: 1rem;
@@ -203,6 +221,9 @@ $bfts-light: #8F96A5;
 
   .vid_view {
     margin: 0 auto;
+  }
+  .item-video {
+    //margin-left: 9%;
   }
 }
 
