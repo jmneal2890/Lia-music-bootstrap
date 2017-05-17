@@ -76,7 +76,7 @@ function musicSelect() {
       $('.logo_tbm').css('display', 'none');
       $('.header_logo').css('font-family', 'orator-std');
       $('.header_logo').fadeOut().html('Built For The Sea').fadeIn();
-      $('.header').css('background-image', 'url(/images/header_01.jpg)');
+      $('.header').css('background-image', 'url(/images/header_bfts_01.jpg)');
     } else if (project == 'lr') {
       themeChange('lr', '#A9E1ED', '#238BA1');
       $('.facebook_link').attr('href', 'https://www.facebook.com/LiaRoseOfficial/');
