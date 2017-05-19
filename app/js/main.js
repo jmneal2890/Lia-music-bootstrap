@@ -1,18 +1,8 @@
-//window.jquery = $ =  require('jquery');
-//var tether = require('tether')
-//var bootstrap = require('bootstrap/dist/js/bootstrap');
-
-
-
 $(document).ready(function(){
-
-console.log('test1');
-
 
 //Owl carousel setup
 var owlWidth = $('.wrapper').width();
 var owlHeight = owlWidth * .563;
-
 
 $('.owl-carousel').owlCarousel({
         items:1,
@@ -38,7 +28,6 @@ $('.owl-carousel').owlCarousel({
         }
     });
 
-
 //spotify width controller
 var project = 'lr'
 
@@ -49,7 +38,6 @@ function spotScale () {
   $('.bfts_spot').css('width', width);
   $('.tbm_spot').css('width', width);
 };
-
 
 //band theme changer
 
@@ -92,7 +80,7 @@ function musicSelect() {
       $('.logo_tbm').css('display', 'none');
       $('.header_logo').css('font-family', 'viktor-script');
       $('.header_logo').fadeOut().html('Lia Rose').fadeIn();
-      $('.header').css('background-image', 'url(/images/header_01.jpg)');
+      $('.header').css('background-image', 'url(/images/header_lia_01.jpg)');
       $('.bio_lr').css('display', 'block');
       $('.bio_bfts').css('display', 'none');
       $('.bio_tbm').css('display', 'none');
@@ -117,11 +105,25 @@ function musicSelect() {
   }
 };
 
+//Theme change event handlders
 $('.item').on('click', musicSelect);
 $('.sub_music').on('click', musicSelect);
 $('.dropdown-item').on('click', musicSelect);
 $('.band_select').on('click', musicSelect);
+$('.nav-header').on('click', function(){
+  event.preventDefault();
+  $('html, body').animate({
+    scrollTop: $('#music').offset().top - 50
+  }, 500, 'swing');
+});
 
+//Navigation scroll function
+function navScroll() {
+  event.preventDefault();
+  $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+  }, 500, 'swing');
+};
 
 //Spotify width event triggers
 $(window).on('load', spotScale());
@@ -129,22 +131,8 @@ $(window).resize(function(){
   spotScale();
 });
 
-
-
-//Navigation scroll on click
-  $(document).on('click', '.scrollDown', function(event){
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
-    }, 500, 'swing');
-});
-
-
-
-
-
-
+//Navigation scroll event handlers
+$(document).on('click', '.scrollDown', navScroll);
 
 //main jquery doc close
 });

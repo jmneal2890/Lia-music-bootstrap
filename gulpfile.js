@@ -3,9 +3,9 @@ var gutil       = require('gulp-util');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var browserify  = require('gulp-browserify');
-var source      = require('vinyl-source-stream');
 var plumber     = require('gulp-plumber');
 var concat      = require('gulp-concat');
+var uglify      = require('gulp-uglify');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass', 'js'], function() {
@@ -34,6 +34,7 @@ gulp.task('js', function(){
   .pipe(plumber())
   .pipe(browserify({ debug:true }))
   .pipe(concat ('build.js'))
+  .pipe(uglify())
   .pipe(gulp.dest('app/js/dist/'))
   .pipe(browserSync.stream())
 });
